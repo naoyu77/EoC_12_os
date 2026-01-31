@@ -206,21 +206,35 @@ sqrt(x):
 
 ---
 
-## Pythonサンプル
+## サンプルコード
 
-`math_sample.py` にアルゴリズムの実装と動作確認用コードがある。
+アルゴリズムの実装と動作確認用コード。計算過程が表示されるので動きを確認できる。
+
+### Python版
 
 ```bash
 uv run python math_sample.py
 ```
 
-各関数:
+### C++版
+
+```bash
+clang++ -std=c++17 -o math_sample math_sample.cpp
+./math_sample
+```
+
+### 各関数
+
 - `multiply(x, y)` - 乗算（シフトと加算）
 - `divide(x, y)` - 除算（再帰版）
-- `divide_iterative(x, y)` - 除算（ループ版 = 筆算と同じ）
+- `divide_iterative(x, y)` - 除算（ループ版 = 筆算と同じ）※Python版のみ
 - `sqrt(x)` - 平方根（二分探索）
 
-計算過程が表示されるので、アルゴリズムの動きを確認できる。
+### なぜ `*` 演算子を使わないのか
+
+現代のCPUには専用の乗算回路があり、`5 * 8` は1命令で計算できる。
+しかしHackコンピュータ（Nand2Tetris）には乗算命令がないため、
+シフトと加算で実装する必要がある。このアルゴリズムを学ぶ目的は「原理を理解すること」。
 
 ---
 
