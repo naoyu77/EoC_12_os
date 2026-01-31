@@ -206,6 +206,24 @@ sqrt(x):
 
 ---
 
+## Pythonサンプル
+
+`math_sample.py` にアルゴリズムの実装と動作確認用コードがある。
+
+```bash
+uv run python math_sample.py
+```
+
+各関数:
+- `multiply(x, y)` - 乗算（シフトと加算）
+- `divide(x, y)` - 除算（再帰版）
+- `divide_iterative(x, y)` - 除算（ループ版 = 筆算と同じ）
+- `sqrt(x)` - 平方根（二分探索）
+
+計算過程が表示されるので、アルゴリズムの動きを確認できる。
+
+---
+
 ## 参考
 
 - 原著: [The Elements of Computing Systems, 2nd Edition](https://mitpress.mit.edu/9780262539807/)
