@@ -14,3 +14,8 @@
 # Compiled files (uncomment if you don't want to track these)
 # *.vm
 # *.hack
+
+# C++ compiled executables
+math_sample
+*.o
+*.out

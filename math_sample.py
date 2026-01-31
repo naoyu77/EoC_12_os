@@ -135,7 +135,7 @@ if __name__ == "__main__":
     print("=" * 50)
 
     result = multiply(12, 10)
-    assert result == 120, f"期待: 120, 実際: {result}"
+    assert result == 120, f"期待: 120, 実際: {result}" ω
 
     result = multiply(6, 5)
     assert result == 30, f"期待: 30, 実際: {result}"
